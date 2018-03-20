@@ -4,9 +4,9 @@ module.exports = function solveEquation(equation) {
   var arr = equation.replace(/\s/g, '').split('x'); //space remove and split x
   var arrOfSolutions = [];
 
-  var a = parseInt(arr[0]);
-  var b = parseInt(arr[1].slice(2));
-  var c = parseInt(arr[2]);
+  var a = parseFloat(arr[0]);
+  var b = parseFloat(arr[1].slice(2));
+  var c = parseFloat(arr[2]);
   var D = b * b - 4 * a * c;
 
   if (D > 0) {
